@@ -1,0 +1,51 @@
+{
+  "title": "OhHey",
+  "name": "ohhey",
+  "version": "1.0.0",
+  "description": "Easy to use, client-side (js) site-wide notifications",
+  "scripts": {
+    "gulp": "gulp"
+  },
+  "homepage": "https://github.com/hrag/ohhey",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hrag/ohhey"
+  },
+  "bugs": {
+    "url": "https://github.com/hrag/ohhey/issues"
+  },
+  "author": {
+    "name": "Hrag Chanchanian",
+    "email": "hragatron@gmail.com",
+    "url": "http://hrag.us"
+  },
+  "license": {
+    "type": "MIT",
+    "url": "https://github.com/SuitAndCape/RAPTORFrame/blob/Info/LICENSE"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-cssnano": "^2.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.1.0",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^1.4.2",
+    "http-server": "^0.8.5"
+  },
+  "private": true,
+  "keywords":
+  [
+    "RAPTORSMACSS",
+    "SCSS",
+    "Sass",
+    "SMACSS",
+    "CSS",
+    "HTML",
+    "JavaScript",
+    "Gulp",
+    "framework",
+    "front end",
+    "SuitAndCape"
+  ]
+}
