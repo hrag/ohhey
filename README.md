@@ -8,12 +8,12 @@
 ohHey(type, message);
 ```
 
-##### type (string)
+##### type (string, required)
 * **confirm** - This will show a green notification with a checkmark, along with your message.
 * **notice** - This will show an orange notification with a speech bubble symbol, along with your message.
 * **urgent** - This will show a red notification with an exclamation point, along with your message.
 
-##### message (string)
+##### message (string, required)
 This is the message that will appear in this instance of the notification.
 
 To use, simply load ohhey-1.0.0.js (or ohhey-1.0.0.min.js) along with ohhey.css, then just call the **ohHey()** function with some arguments like so:
