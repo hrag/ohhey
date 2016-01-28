@@ -9,18 +9,18 @@ ohHey(type, message);
 ```
 
 ##### type (string)
-* **confirm** - This will show a green notification with a checkmark
-* **notice** - This will show an orange notification with a speech bubble symbol
-* **urgent** - This will show a red notification with an exclamation point
+* **confirm** - This will show a green notification with a checkmark, along with your message.
+* **notice** - This will show an orange notification with a speech bubble symbol, along with your message.
+* **urgent** - This will show a red notification with an exclamation point, along with your message.
 
 ##### message (string)
 This is the message that will appear in this instance of the notification.
 
 To use, simply load ohhey-1.0.0.js (or ohhey-1.0.0.min.js) along with ohhey.css, then just call the **ohHey()** function with some arguments like so:
 ``` Javascript
-ohHey('confirm', 'Sweet - Things went well and you're a winner!');
-ohHey('notice', 'FYI - This thing happened');
-ohHey('urgent', 'Sorry - Your house is on fire');
+ohHey(confirm, "Sweet - Things went well and you're a winner!");
+ohHey("notice", "FYI - This thing happened");
+ohHey("urgent", "Oops - It looks like some shit broke");
 ```
 
 ### Customization
