@@ -1,4 +1,4 @@
-# Oh Hey!!
+# Oh Hey!
  A simple drop-in script for site-wide notifications.
 ### Requirements:
 * jQuery 2.2.0+
