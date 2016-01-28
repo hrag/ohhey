@@ -28,3 +28,5 @@ ohHey("urgent", "Oops - It looks like some shit broke");
 There is an "options" object in ohhey.js, so far the only option is the duration of the notification. Planning on adding more, please submit suggestions.
 ##### ohhey-extend.css
 Wanna change some visual stuff around? Use this file. Some basics are already there, make sure you load it after ohhey.css though!
+
+###  [See a demo here](https://hrag.github.io/ohhey)
