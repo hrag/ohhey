@@ -1,7 +1,6 @@
 var ohHey = function(type, str) {
 	// Types: urgent, notice, confirm
 	// This won't work without one of these three.
-
 	var options = {
 		timing: 10000
 	}
@@ -26,6 +25,18 @@ var ohHey = function(type, str) {
 		}, 250);
 	}
 
+	function setWidth() {
+		$ohHeyTextSubwrapper.css({'width': 'auto'});
+		$ohHeyTextSubwrapper.css({'width': $ohHeyText.outerWidth()});
+	}
+
+	function lineTweak() {
+		if ($ohHeyText.outerHeight() <= 18) {
+			$ohHeyText.css({'top': '6px'});
+		} else {
+			$ohHeyText.css({'top': 0});
+		}
+	}
 
 	// If no arguments, close the notification & abort the function
 	if (arguments.length == 0) {
@@ -46,18 +57,22 @@ var ohHey = function(type, str) {
 	}
 
 	// Append elements
-	$('body').prepend('<div class="ohhey"><div class="ohhey-timer"></div><div><span><div class="ohhey-icon"></div><span class="ohhey-text"></span></span></div><div class="ohhey-close"></div></div>');
+	$('body').prepend('<div class="ohhey"><div class="ohhey-timer"></div><div class="ohhey-text-wrapper"><div class="ohhey-text-subwrapper"><div class="ohhey-icon"></div><span class="ohhey-text"></span></div></div><div class="ohhey-close"></div></div>');
 
 	// Register the new DOM elements
 	var $ohHey = $('.ohhey');
 	var $ohHeyText = $('.ohhey-text');
 	var $ohHeyClose = $('.ohhey-close');
+	var $ohHeyTextSubwrapper = $('.ohhey-text-subwrapper');
 
 	// Bind close button
 	$ohHeyClose.click(closeUtil);
 
-	// populate
+	// Populate with message
 	$ohHeyText.text(str);
+
+	// Get width of message & set it to the subwrapper
+	setWidth();
 
 	// Measure height
 	var noticeHeight = $ohHey.outerHeight();
@@ -68,6 +83,15 @@ var ohHey = function(type, str) {
 	// Position it to 0 from the top, show ohhey immediately after stuff
 	setTimeout(function() {
 		$ohHey.addClass('ohhey-showing ohhey-'+type);
+	});
+
+	// Tweak some top spacing to make the message look nicer if it's just 1 line
+	lineTweak();
+
+	// Bind a few things on resizing of the window
+	$(window).resize(function() {
+		setWidth();
+		lineTweak();
 	});
 
 	// Automatically close the notification

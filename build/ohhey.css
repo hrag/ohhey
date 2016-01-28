@@ -1,32 +1,48 @@
+/*---------------------------------------------------
+Micsins 0.1
+---------------------------------------------------
+A set of useful SCSS mixins modeled after LESS Elements
+More info at: http://github.com/hrag/micsins
+---------------------------------------------------*/
+.ohhey * {
+  box-sizing: border-box; }
 
 .ohhey {
   position: fixed;
   left: 0;
   width: 100%;
   height: auto;
+  padding: 12px 0 12px;
   opacity: .97;
   overflow: hidden;
-  -webkit-transition: all 0.25s cubic-bezier(0.695, 0.335, 0.37, 1.01);
-  -moz-transition: all 0.25s cubic-bezier(0.695, 0.335, 0.37, 1.01);
-  -o-transition: all 0.25s cubic-bezier(0.695, 0.335, 0.37, 1.01);
-  transition: all 0.25s cubic-bezier(0.695, 0.335, 0.37, 1.01);
+  -webkit-transition: all 0.33333s cubic-bezier(0.47, -0.29, 0.79, 0.99);
+  -moz-transition: all 0.33333s cubic-bezier(0.47, -0.29, 0.79, 0.99);
+  -o-transition: all 0.33333s cubic-bezier(0.47, -0.29, 0.79, 0.99);
+  transition: all 0.33333s cubic-bezier(0.47, -0.29, 0.79, 0.99);
   z-index: 50; }
   .ohhey span {
-    max-width: 70%;
+    max-width: 66.666%;
+    width: auto;
     text-align: left; }
   .ohhey .ohhey-icon {
     position: absolute;
     top: 50%;
     left: -40px;
-    margin-top: -15px; }
+    height: 25px;
+    width: 25px;
+    margin-top: -12px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center; }
   .ohhey .ohhey-close {
-    top: 13px;
+    top: 5px;
     right: 10px;
     height: 44px;
     width: 44px;
     cursor: pointer; }
   .ohhey .ohhey-text {
-    font-size: 15px; }
+    position: relative;
+    font-size: 1em; }
   .ohhey .ohhey-timer {
     position: absolute;
     bottom: 0;
@@ -35,7 +51,11 @@
     width: 100%;
     background-color: #fff; }
   .ohhey.ohhey-showing {
-    top: 0 !important; }
+    top: -2px !important;
+    -webkit-transition: all 0.33333s cubic-bezier(0.47, -0.29, 0.79, 0.99);
+    -moz-transition: all 0.33333s cubic-bezier(0.47, -0.29, 0.79, 0.99);
+    -o-transition: all 0.33333s cubic-bezier(0.47, -0.29, 0.79, 0.99);
+    transition: all 0.33333s cubic-bezier(0.47, -0.29, 0.79, 0.99); }
     .ohhey.ohhey-showing .ohhey-timer {
       left: 0;
       -webkit-transition: all 10s linear;
@@ -60,18 +80,12 @@
     background-repeat: no-repeat;
     background-size: 50%;
     background-position: center; }
-  .ohhey > div {
-    text-align: center; }
-    .ohhey > div > span {
+  .ohhey .ohhey-text-wrapper {
+    min-height: 30px; }
+    .ohhey .ohhey-text-wrapper .ohhey-text-subwrapper {
       position: relative;
-      left: 10px;
-      display: block;
-      margin: 14px auto;
+      max-width: 66.666%;
+      min-height: 25px;
+      margin: 0 auto;
       font-family: Helvetica, Arial, sans-serif;
       color: #fff; }
-      .ohhey > div > span .ohhey-icon {
-        height: 30px;
-        width: 30px;
-        background-repeat: no-repeat;
-        background-size: 100%;
-        background-position: center; }

@@ -54,7 +54,7 @@ gulp.task('styles', function () {
 		.pipe(sass({
 			errLogToConsole: true
 		}))
-		.pipe(stripCssComments())
+		// .pipe(stripCssComments())
 		.pipe(gulp.dest('./build'));
 });
 
