@@ -10,7 +10,7 @@
 	left: 0;
 	width: 100%;
 	height: auto;
-	padding: 12px 0 12px;
+	padding: 15px 0 10px;
 	opacity: .97;
 	overflow: hidden;
 	@include transition($dur, $eas-return);
@@ -26,7 +26,7 @@
 		left: -40px;
 		height: 25px;
 		width: 25px;
-		margin-top: -12px;
+		margin-top: -14px;
 		background-repeat: no-repeat;
 		background-size: 100%;
 		background-position: center;

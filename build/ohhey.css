@@ -12,7 +12,7 @@ More info at: http://github.com/hrag/micsins
   left: 0;
   width: 100%;
   height: auto;
-  padding: 12px 0 12px;
+  padding: 15px 0 10px;
   opacity: .97;
   overflow: hidden;
   -webkit-transition: all 0.33333s cubic-bezier(0.47, -0.29, 0.79, 0.99);
@@ -30,7 +30,7 @@ More info at: http://github.com/hrag/micsins
     left: -40px;
     height: 25px;
     width: 25px;
-    margin-top: -12px;
+    margin-top: -14px;
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center; }

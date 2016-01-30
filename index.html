@@ -4,12 +4,13 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
 		<title>Oh Hey! - Simple, site-wide notifications</title>
+		<link rel="stylesheet" type="text/css" href="build/index.css" />
 		<link rel="stylesheet" type="text/css" href="build/ohhey.css" />
 		<link rel="stylesheet" type="text/css" href="build/ohhey-extend.css" />
 
 
 		<meta property="og:title" content="Oh Hey! - Simple, site-wide notifications" />
-		<meta property="og:url" content="http://www.github.com/hrag/ohhey" />
+		<meta property="og:url" content="http://hrag.github.io/ohhey" />
 		<meta property="og:image" content="http://google.com/fb_img.jpg" />
 		<meta property="og:description" content="Oh Hey! - Simple, site-wide notifications" />
 		<meta property="og:site_name" content="Oh Hey! - Simple, site-wide notifications" />
@@ -17,10 +18,32 @@
 	</head>
 
 	<body>
+		<h1>Oh Hey!</h1>
+		<h2>A simple, drop-in script for site-wide notifictions</h2>
+		<h3>Here's an example of the function</h3>
+		<pre>ohHey('confirm', 'I just clicked this button');</pre>
 
+		<div class="example">
+			<button class="green" onclick="ohHey('confirm', 'Sweet - Things went well and you\'re a winner!');">A positive alert</button>
+			<span>This executes: ohHey("confirm", "Sweet - Things went well and you're a winner!");</span>
+		</div>
+		<div class="example">
+			<button class="orange" onclick="ohHey('notice', 'FYI - This thing happened');">A neutral alert</button>
+			<span>This executes: ohHey("notice", "FYI - This thing happened");</span>
+		</div>
+		<div class="example">
+			<button class="red" onclick="ohHey('urgent', 'Oops - It looks like some shit broke');">An urgent alert</button>
+			<span>This executes: ohHey("urgent", "Oops - It looks like some shit broke");</span>
+		</div>
+		<div class="example">
+			<button class="grey" onclick="ohHey();">Close the alert</button>
+			<span>This executes: ohHey();</span>
+		</div>
+
+		<p><a href="http://github.com/hrag/ohhey" title="Oh Hey Github">Check this out on GitHub</a></p>
 	</body>
 
- 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.js" type="text/javascript"></script>
+ 	<script src="build/third/jquery-2.2.0.min.js" type="text/javascript"></script>
 	<script src="build/ohhey-1.0.0.js"></script>
 
 

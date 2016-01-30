@@ -1,0 +1,98 @@
+/*---------------------------------------------------
+Micsins 0.1
+---------------------------------------------------
+A set of useful SCSS mixins modeled after LESS Elements
+More info at: http://github.com/hrag/micsins
+---------------------------------------------------*/
+* {
+  box-sizing: border-box; }
+
+body {
+  height: 100%;
+  width: 100%;
+  min-width: 860px;
+  padding: 20px 30px;
+  margin: 0;
+  background-color: #fbfbfb;
+  font-family: "Helvetica Neue Light", "HelveticaNeueLight", Arial, sans-serif;
+  font-weight: 100;
+  color: #666; }
+
+h1 {
+  margin: 0 0 10px 0;
+  font-size: 50px; }
+
+h2 {
+  margin-top: 0;
+  font-size: 32px; }
+
+h3 {
+  margin-bottom: 4px;
+  font-size: 20px; }
+
+p {
+  font-size: 18px; }
+
+pre {
+  margin-top: 5px;
+  padding: 10px;
+  font-size: 22px;
+  background-color: #eee;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px; }
+
+a {
+  color: #0079df;
+  text-decoration: none;
+  -moz-transition-duration: 0.25s;
+  -webkit-transition-duration: 0.25s;
+  -o-transition-duration: 0.25s;
+  transition-duration: 0.25s; }
+  a:hover {
+    color: #75e16c; }
+
+button {
+  height: 40px;
+  width: 200px;
+  margin-right: 10px;
+  font-size: 18px;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -moz-transition-duration: 0.25s;
+  -webkit-transition-duration: 0.25s;
+  -o-transition-duration: 0.25s;
+  transition-duration: 0.25s; }
+  button:hover {
+    color: #fbfbfb; }
+
+.green {
+  color: #75e16c;
+  border: solid 1px #75e16c; }
+  .green:hover {
+    background-color: #75e16c; }
+
+.orange {
+  color: #f5ac56;
+  border: solid 1px #f5ac56; }
+  .orange:hover {
+    background-color: #f5ac56; }
+
+.red {
+  color: #cd4848;
+  border: solid 1px #cd4848; }
+  .red:hover {
+    background-color: #cd4848; }
+
+.grey {
+  color: #666;
+  border: solid 1px #666; }
+  .grey:hover {
+    background-color: #666; }
+
+div.example {
+  margin-bottom: 10px; }

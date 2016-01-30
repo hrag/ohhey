@@ -1,0 +1,103 @@
+@import "micsins";
+
+$green: #75e16c;
+$orange: #f5ac56;
+$red: #cd4848;
+$blue: #0079df;
+
+* {
+	box-sizing: border-box;
+}
+body {
+	height: 100%;
+	width: 100%;
+	min-width: 860px;
+	padding: 20px 30px;
+	margin: 0;
+	background-color: #fbfbfb;
+	font-family: "Helvetica Neue Light", "HelveticaNeueLight", Arial, sans-serif;
+	font-weight: 100;
+	color: #666;
+}
+h1 {
+	margin: 0 0 10px 0;
+	font-size: 50px;
+}
+h2 {
+	margin-top: 0;
+	font-size: 32px;
+}
+h3 {
+	margin-bottom: 4px;
+	font-size: 20px;
+}
+p {
+	font-size: 18px;
+}
+pre {
+	margin-top: 5px;
+	padding: 10px;
+	font-size: 22px;
+	background-color: #eee;
+	@include rounded(5px);
+}
+
+a {
+	color: $blue;
+	text-decoration: none;
+	@include transition-duration(.25s);
+	&:hover {
+		color: $green;
+	}
+}
+
+button {
+	height: 40px;
+	width: 200px;
+	margin-right: 10px;
+	font-size: 18px;
+	background-color: transparent;
+	outline: none;
+	cursor: pointer;
+	@include rounded(5px);
+	@include transition-duration(.25s);
+	&:hover {
+		color: #fbfbfb;
+	}
+}
+
+.green {
+	color: $green;
+	border: solid 1px $green;
+	&:hover {
+		background-color: $green;
+	}
+}
+
+.orange {
+	color: $orange;
+	border: solid 1px $orange;
+	&:hover {
+		background-color: $orange;
+	}
+}
+
+.red {
+		color: $red;
+		border: solid 1px $red;
+	&:hover {
+		background-color: $red;
+	}
+}
+
+.grey {
+		color: #666;
+		border: solid 1px #666;
+	&:hover {
+		background-color: #666;
+	}
+}
+
+div.example {
+	margin-bottom: 10px;
+}
