@@ -31,11 +31,7 @@ var ohHey = function(type, str) {
 	}
 
 	function lineTweak() {
-		if ($ohHeyText.outerHeight() <= 18) {
-			$ohHeyText.css({'top': '6px'});
-		} else {
-			$ohHeyText.css({'top': 0});
-		}
+		$ohHeyText.height($ohHeyTextSubwrapper.outerHeight());
 	}
 
 	// If no arguments, close the notification & abort the function

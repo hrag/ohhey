@@ -41,8 +41,11 @@ More info at: http://github.com/hrag/micsins
     width: 44px;
     cursor: pointer; }
   .ohhey .ohhey-text {
+    display: table-cell;
     position: relative;
-    font-size: 1em; }
+    font-size: 1em;
+    vertical-align: middle;
+    height: 100%; }
   .ohhey .ohhey-timer {
     position: absolute;
     bottom: 0;
