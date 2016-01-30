@@ -10,7 +10,6 @@ More info at: http://github.com/hrag/micsins
 body {
   height: 100%;
   width: 100%;
-  min-width: 860px;
   padding: 20px 30px;
   margin: 0;
   background-color: #fbfbfb;
@@ -96,3 +95,13 @@ button {
 
 div.example {
   margin-bottom: 10px; }
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  pre {
+    overflow-x: scroll;
+    font-size: 14px;
+    padding: 20px 10px; }
+  button {
+    width: 100%; }
+  div.example span {
+    display: none; } }
