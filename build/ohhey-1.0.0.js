@@ -17,7 +17,7 @@ var ohHey = function(type, str) {
 		$ohHey.css({top: -noticeHeight});
 
 		// Hide ohhey from view
-		$ohHey.removeClass('ohhey-showing');
+		$ohHey.addClass('ohhey-hide').removeClass('ohhey-showing');
 
 		// Remove the ohhey element from the DOM
 		setTimeout(function() {
@@ -73,10 +73,11 @@ var ohHey = function(type, str) {
 	// Measure height
 	var noticeHeight = $ohHey.outerHeight();
 
-	// Position properly above view
+	// Position properly above/out of view
 	$ohHey.css({top: -noticeHeight});
 
-	// Position it to 0 from the top, show ohhey immediately after stuff
+	// Position it to 0 from the top (ohhey-showing), set the type (ohhey-TYPE)
+	// $ohHey.addClass('ohhey-'+type);
 	setTimeout(function() {
 		$ohHey.addClass('ohhey-showing ohhey-'+type);
 	});

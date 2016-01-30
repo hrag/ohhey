@@ -13,7 +13,7 @@
 	padding: 15px 0 10px;
 	opacity: .97;
 	overflow: hidden;
-	@include transition($dur, $eas-return);
+	@include opacity(0);
 	z-index: 50;
 	span {
 		max-width: 66.666%;
@@ -56,10 +56,15 @@
 	&.ohhey-showing {
 		top: -2px !important;
 		@include transition($dur, $eas-return);
+		@include opacity(1);
+		@include transition($dur, $eas-return);
 		.ohhey-timer {
 			left: 0;
 			@include transition(10s, linear);
 		}
+	}
+	&.ohhey-hide {
+		@include transition($dur, $eas-return);
 	}
 	&.ohhey-urgent {
 		background-color: $red;
