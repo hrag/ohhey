@@ -18,7 +18,7 @@ This is the message that will appear in this instance of the notification.
 
 To use, simply load ohhey-1.0.0.js (or ohhey-1.0.0.min.js) along with ohhey.css, then just call the **ohHey()** function with some arguments like so:
 ``` Javascript
-ohHey(confirm, "Sweet - Things went well and you're a winner!");
+ohHey("confirm", "Sweet - Things went well and you're a winner!");
 ohHey("notice", "FYI - This thing happened");
 ohHey("urgent", "Oops - It looks like some shit broke");
 ```
