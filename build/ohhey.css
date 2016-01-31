@@ -55,7 +55,7 @@ More info at: http://github.com/hrag/micsins
     width: 100%;
     background-color: #fff; }
   .ohhey.ohhey-showing {
-    top: -2px !important;
+    top: -4px !important;
     -webkit-transition: all 0.33333s cubic-bezier(0.47, -0.29, 0.79, 0.99);
     -moz-transition: all 0.33333s cubic-bezier(0.47, -0.29, 0.79, 0.99);
     -o-transition: all 0.33333s cubic-bezier(0.47, -0.29, 0.79, 0.99);
@@ -108,3 +108,11 @@ More info at: http://github.com/hrag/micsins
       margin: 0 auto;
       font-family: Helvetica, Arial, sans-serif;
       color: #fff; }
+  .ohhey ul, .ohhey ol {
+    margin: 0; }
+  .ohhey ul {
+    padding-left: 0; }
+    .ohhey ul li {
+      list-style: none; }
+  .ohhey ol {
+    padding-left: 15px; }

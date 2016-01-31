@@ -65,7 +65,7 @@ var ohHey = function(type, str) {
 	$ohHeyClose.click(closeUtil);
 
 	// Populate with message
-	$ohHeyText.text(str);
+	$ohHeyText.html(str);
 
 	// Get width of message & set it to the subwrapper
 	setWidth();
@@ -93,7 +93,7 @@ var ohHey = function(type, str) {
 
 	// Automatically close the notification
 	timerClose = setTimeout(function() {
-		closeUtil();
+		// closeUtil();
 	}, options.timing);
 
 }

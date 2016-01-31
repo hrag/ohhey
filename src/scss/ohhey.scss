@@ -53,7 +53,7 @@
 		background-color: $white;
 	}
 	&.ohhey-showing {
-		top: -2px !important;
+		top: -4px !important;
 		@include transition($dur, $eas-return);
 		@include opacity(.97);
 		@include transition($dur, $eas-return);
@@ -102,5 +102,17 @@
 			font-family: $font;
 			color: $white;
 		}
+	}
+	ul, ol {
+		margin: 0;
+	}
+	ul {
+		padding-left: 0;
+		li {
+			list-style: none;
+		}
+	}
+	ol {
+		padding-left: 15px;
 	}
 }
